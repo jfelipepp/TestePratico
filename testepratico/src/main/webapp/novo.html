@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<style>
+label {
+    color: white;
+}
+</style>
+	<meta charset="utf-8">
+	<title>Form-v10 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="form-v10">
+	<div class="page-content">
+		<div class="form-v10-content">
+			<form class="form-detail" action="insert"  name="frm">
+				<div class="form-left">
+					<h2>Contêiner</h2>
+					<div class="form-row">
+						<select name="tipo">
+						<option class="option" value="selecione">Selecione o Tipo</option>
+						    <option class="option" value="20">20</option>
+						    <option class="option" value="40">40</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="cliente"  class="input-text" placeholder="Nome do Cliente" required>
+						</div>
+						
+					</div>
+					<div class="form-row">
+						<select name="status">
+						    <option value="position">Selecione o Status</option>
+						    <option value="Cheio">Cheio</option>
+						    <option value="Vazio">Vazio</option>
+						    
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-row">
+						<input type="text" name="numconteiner" class="company" placeholder="Número do contêiner" required>
+					</div>
+					
+					<div class="form-row">
+						<select name="categoria">
+						    <option value="po">Selecione a Categoria</option>
+						    <option value="expotacao">Exportação</option>
+						    <option value="importacao">Importação</option>
+						    
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					
+					
+					
+				</div>
+				
+				<div class="form-right">
+					<h2>Movimentações</h2>
+					<div class="form-row">
+						<select name="tmovimentacao">
+						    <option value="po">Tipo de Movimentação</option>
+						    <option value="embarque">Embarque</option>
+						    <option value="descarga">Descarga</option>
+							<option value="gatein">Gate In</option>
+							<option value="gateout">Gate Out</option>
+							<option value="posicionamento">Posicionamento</option>
+							<option value="pilha">Pilha</option>
+							<option value="pesagem">Pesagem</option>
+							<option value="scanner">Scanner</option>
+						    
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+				<div class="form-group">
+						<div class="form-row form-row-1">
+							<label for="horainicio">Hora de Inicio</label>
+							<input type="time" name="horainicio">
+						</div>
+						
+						<div class="form-row form-row-1">
+							<label for="horafinal">Hora Final</label>
+							<input type="time" name="horafinal">
+						</div>
+						
+					</div>
+					
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<label for="datainicio">Data De Inicio:</label>
+							<input type="date" name="datainicio">
+						</div>
+						
+						<div class="form-row form-row-1">
+							<label for="datafim">Data De Fim:</label>
+							<input type="date"  name="datafim">
+						</div>
+						
+					</div>
+					
+					
+					
+					
+					<div class="form-row-last">
+						<input type="button" class="register" value="OK" onclick="validar()">
+					</div>
+				</div>
+				
+				
+			</form>
+		</div>
+	</div>
+	
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
